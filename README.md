@@ -4,7 +4,7 @@ Este repositorio contiene el código y configuraciones utilizadas en el Trabajo 
 
 **" Avances en Inteligencia Artificial en elcontexto del reposicionamiento de fármacos"**
 
-El objetivo ha sido reproducir, analizar y evaluar el modelo DeepTTA (https://github.com/jianglikun/DeepTTC?tab=readme-ov-file), un sistema híbrido basado en Transformers y codificaciones químicas (ESPF), aplicado a la predicción de la sensibilidad celular a compuestos antitumorales.
+El objetivo ha sido reproducir, analizar y evaluar el modelo DeepTTA [1], un sistema híbrido basado en Transformers y codificaciones químicas (ESPF), aplicado a la predicción de la sensibilidad celular a compuestos antitumorales.
 
 ---
 
