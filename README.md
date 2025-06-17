@@ -21,7 +21,7 @@ El objetivo ha sido reproducir, analizar y evaluar el modelo DeepTTA (https://gi
 ---
 
 ## 📎 Notas
-Este proyecto es una adaptación académica del modelo original DeepTTA.
+Este proyecto es una adaptación académica del modelo original DeepTTA (https://academic.oup.com/bib/article/23/3/bbac100/6554594).
 La implementación se ha reestructurado para facilitar la comprensión, experimentación y evaluación del modelo en un entorno reproducible.
 
 Francisco Javier Ruiz Rodríguez
