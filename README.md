@@ -17,10 +17,11 @@ El objetivo ha sido reproducir, analizar y evaluar el modelo DeepTTA (#https://g
   - ⚖️ Diseño de particiones de datos balanceadas (`ByCancerEquilibrado`, `ByDrugEquilibrado`).
   - 📈 Visualización de resultados por tipo de cáncer y por fármaco.
 
+- Todos los resultados obtenidos (predicciones, métricas y gráficas) se encuentran organizados en las carpetas 'predicciones' y 'graficas_predicciones' respectivamente .
 ---
 
 ## 📎 Notas
-Este proyecto es una adaptación académica del modelo original DeepTTC.
+Este proyecto es una adaptación académica del modelo original DeepTTA.
 La implementación se ha reestructurado para facilitar la comprensión, experimentación y evaluación del modelo en un entorno reproducible.
 
 Francisco Javier Ruiz Rodríguez
