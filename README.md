@@ -25,7 +25,7 @@ El objetivo ha sido reproducir, analizar y evaluar el modelo DeepTTA (https://gi
 Debido al tamaño de los archivos, estos archivos deben descargarse por separado:
 
 1. Archivo con las características génicas de las líneas celulares: https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources///Data/preprocessed/Cell_line_RMA_proc_basalExp.txt.zip
-2. Modelos entrenados: [https://drive.google.com/drive/u/2/folders/1JWLLyCYW1wWNZBEsflt4l8aSdRoga72K](https://drive.google.com/file/d/1J5kJnznJ6JOSaDzutiu4XJI9GDGsbaco/view?usp=drive_link)
+2. Modelos entrenados: [https://drive.google.com/drive/u/2/folders/1JWLLyCYW1wWNZBEsflt4l8aSdRoga72K](https://drive.google.com/file/d/1J5kJnznJ6JOSaDzutiu4XJI9GDGsbaco/view?usp=drive_link) cuyas informaciones están en la carpeta Registro_Modelos
 
 
 
