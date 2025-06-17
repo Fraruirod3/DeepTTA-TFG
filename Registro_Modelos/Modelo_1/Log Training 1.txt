@@ -1,0 +1,316 @@
+PS C:\Users\franc\Desktop\TFG\DeepTTC-main> & C:/Users/franc/AppData/Local/Programs/Python/Python310/python.exe c:/Users/franc/Desktop/TFG/DeepTTC-main/Step3_model.py
+##################################################
+#        使用的药物有：198
+#        其中最少的药物对应44个细胞系，
+         最多的对应808个细胞系，
+         平均对应683.040404040404个细胞系
+##################################################
+#        使用的细胞系有：809
+#        其中最少的细胞系对应14个药物，
+         最多的对应196个药物，
+         平均对应167.17181705809642个药物
+##################################################
+#        癌症类型一共有：31
+#        其中最少的癌症类型对应179个药物，
+         最多的对应25743个药物，
+         平均对应4359.354838709677个药物
+##################################################
+step1 过滤细胞系....
+在检查细胞系rna 表达矩阵的时候发现4个细胞系没有表达记录
+(135242, 19)
+(134728, 19)
+step2 过滤药物....
+对于部分Drug没有记录PuchemID，得不到smile
+(134728, 19)
+(103492, 19)
+##################################################
+#        使用的药物有：16
+#        其中最少的药物对应48个细胞系，
+         最多的对应804个细胞系，
+         平均对应625.0个细胞系
+##################################################
+#        使用的细胞系有：805
+#        其中最少的细胞系对应1个药物，
+         最多的对应16个药物，
+         平均对应12.422360248447205个药物
+##################################################
+#        癌症类型一共有：31
+#        其中最少的癌症类型对应13个药物，
+         最多的对应1862个药物，
+         平均对应322.16129032258067个药物
+TCGA_DESC
+UNCLASSIFIED    1862
+BRCA             749
+LUAD             663
+COREAD           603
+SCLC             509
+SKCM             405
+ESCA             375
+PAAD             369
+HNSC             336
+OV               320
+GBM              320
+ALL              307
+NB               297
+STAD             293
+DLBC             239
+BLCA             233
+LAML             227
+MESO             216
+KIRC             211
+MM               203
+LIHC             195
+LUSC             191
+THCA             181
+CESC             168
+LGG              117
+UCEC             117
+LCML             114
+PRAD              76
+MB                52
+CLL               26
+ACC               13
+Name: count, dtype: int64
+##################################################
+#        数据对一共有：10000
+#        按照TCGA_DESC对数据进行切割，对于每个instance，0.8的数据进行训练，0.2的数据进行验证
+#        训练数据有：7976
+#        测试数据有：2011
+--- Go for Training ---
+Training at Epoch 1 iteration 0 with loss 11.2181. Total time 0.0 hours
+Validation at Epoch 1 with loss:2.87781, MSE: 3.08521 , Pearson Correlation: 0.86195 with p-value: 0.0 Spearman Correlation: 0.85538 with p_value: 0.0 , Concordance Index: 0.83466
+Training at Epoch 2 iteration 0 with loss 2.28511. Total time 0.01472 hours
+Validation at Epoch 2 with loss:2.72737, MSE: 2.72102 , Pearson Correlation: 0.88073 with p-value: 0.0 Spearman Correlation: 0.86169 with p_value: 0.0 , Concordance Index: 0.83771
+Training at Epoch 3 iteration 0 with loss 2.43452. Total time 0.02888 hours
+Validation at Epoch 3 with loss:2.04010, MSE: 2.53726 , Pearson Correlation: 0.88971 with p-value: 0.0 Spearman Correlation: 0.87669 with p_value: 0.0 , Concordance Index: 0.84886
+Training at Epoch 4 iteration 0 with loss 2.70212. Total time 0.04305 hours
+Validation at Epoch 4 with loss:4.60978, MSE: 2.29802 , Pearson Correlation: 0.89300 with p-value: 0.0 Spearman Correlation: 0.88268 with p_value: 0.0 , Concordance Index: 0.85264
+Training at Epoch 5 iteration 0 with loss 2.64423. Total time 0.05722 hours
+Validation at Epoch 5 with loss:1.61304, MSE: 2.08108 , Pearson Correlation: 0.89806 with p-value: 0.0 Spearman Correlation: 0.88543 with p_value: 0.0 , Concordance Index: 0.85358
+Training at Epoch 6 iteration 0 with loss 1.34898. Total time 0.07138 hours
+Validation at Epoch 6 with loss:1.33884, MSE: 2.05386 , Pearson Correlation: 0.90064 with p-value: 0.0 Spearman Correlation: 0.88916 with p_value: 0.0 , Concordance Index: 0.85643
+Training at Epoch 7 iteration 0 with loss 1.53366. Total time 0.08555 hours
+Validation at Epoch 7 with loss:1.67283, MSE: 2.02029 , Pearson Correlation: 0.90201 with p-value: 0.0 Spearman Correlation: 0.88922 with p_value: 0.0 , Concordance Index: 0.85653
+Training at Epoch 8 iteration 0 with loss 1.86086. Total time 0.09972 hours
+Training at Epoch 9 iteration 0 with loss 1.90478. Total time 0.11388 hours
+Validation at Epoch 9 with loss:2.27675, MSE: 1.97775 , Pearson Correlation: 0.90383 with p-value: 0.0 Spearman Correlation: 0.89066 with p_value: 0.0 , Concordance Index: 0.85783
+Training at Epoch 10 iteration 0 with loss 2.38782. Total time 0.12805 hours
+Validation at Epoch 10 with loss:2.08432, MSE: 1.91827 , Pearson Correlation: 0.90628 with p-value: 0.0 Spearman Correlation: 0.89298 with p_value: 0.0 , Concordance Index: 0.85958
+Training at Epoch 11 iteration 0 with loss 1.58069. Total time 0.14222 hours
+Training at Epoch 12 iteration 0 with loss 1.38138. Total time 0.15638 hours
+Validation at Epoch 12 with loss:4.03388, MSE: 1.90714 , Pearson Correlation: 0.91063 with p-value: 0.0 Spearman Correlation: 0.89830 with p_value: 0.0 , Concordance Index: 0.86324
+Training at Epoch 13 iteration 0 with loss 1.94849. Total time 0.17055 hours
+Validation at Epoch 13 with loss:1.47267, MSE: 1.84387 , Pearson Correlation: 0.91172 with p-value: 0.0 Spearman Correlation: 0.90006 with p_value: 0.0 , Concordance Index: 0.86475
+Training at Epoch 14 iteration 0 with loss 1.90129. Total time 0.18472 hours
+Validation at Epoch 14 with loss:1.96883, MSE: 1.83653 , Pearson Correlation: 0.91283 with p-value: 0.0 Spearman Correlation: 0.90151 with p_value: 0.0 , Concordance Index: 0.86539
+Training at Epoch 15 iteration 0 with loss 1.58552. Total time 0.19888 hours
+Training at Epoch 16 iteration 0 with loss 1.44675. Total time 0.21305 hours
+Training at Epoch 17 iteration 0 with loss 1.84129. Total time 0.22722 hours
+Validation at Epoch 17 with loss:2.00310, MSE: 1.81261 , Pearson Correlation: 0.91284 with p-value: 0.0 Spearman Correlation: 0.90093 with p_value: 0.0 , Concordance Index: 0.86586
+Training at Epoch 18 iteration 0 with loss 1.74029. Total time 0.24138 hours
+Training at Epoch 19 iteration 0 with loss 2.08143. Total time 0.25555 hours
+Training at Epoch 20 iteration 0 with loss 1.23031. Total time 0.26972 hours
+Validation at Epoch 20 with loss:1.18526, MSE: 1.76223 , Pearson Correlation: 0.91396 with p-value: 0.0 Spearman Correlation: 0.90316 with p_value: 0.0 , Concordance Index: 0.86658
+Training at Epoch 21 iteration 0 with loss 1.31491. Total time 0.28388 hours
+Validation at Epoch 21 with loss:0.83426, MSE: 1.71437 , Pearson Correlation: 0.91657 with p-value: 0.0 Spearman Correlation: 0.90506 with p_value: 0.0 , Concordance Index: 0.86869
+Training at Epoch 22 iteration 0 with loss 1.15696. Total time 0.29944 hours
+Training at Epoch 23 iteration 0 with loss 1.32934. Total time 0.31388 hours
+Training at Epoch 24 iteration 0 with loss 1.46440. Total time 0.32805 hours
+Validation at Epoch 24 with loss:1.21311, MSE: 1.70384 , Pearson Correlation: 0.92031 with p-value: 0.0 Spearman Correlation: 0.90913 with p_value: 0.0 , Concordance Index: 0.87120
+Training at Epoch 25 iteration 0 with loss 1.41636. Total time 0.34194 hours
+Training at Epoch 26 iteration 0 with loss 1.63746. Total time 0.35638 hours
+Training at Epoch 27 iteration 0 with loss 1.33866. Total time 0.37083 hours
+Validation at Epoch 27 with loss:1.34447, MSE: 1.68106 , Pearson Correlation: 0.92228 with p-value: 0.0 Spearman Correlation: 0.91024 with p_value: 0.0 , Concordance Index: 0.87204
+Training at Epoch 28 iteration 0 with loss 1.50588. Total time 0.385 hours
+Validation at Epoch 28 with loss:3.15858, MSE: 1.59493 , Pearson Correlation: 0.92329 with p-value: 0.0 Spearman Correlation: 0.91305 with p_value: 0.0 , Concordance Index: 0.87425
+Training at Epoch 29 iteration 0 with loss 2.34420. Total time 0.39916 hours
+Training at Epoch 30 iteration 0 with loss 1.35182. Total time 0.41333 hours
+Training at Epoch 31 iteration 0 with loss 1.33321. Total time 0.4275 hours
+Training at Epoch 32 iteration 0 with loss 1.54529. Total time 0.44166 hours
+Training at Epoch 33 iteration 0 with loss 1.37205. Total time 0.45583 hours
+Validation at Epoch 33 with loss:1.59405, MSE: 1.52960 , Pearson Correlation: 0.92560 with p-value: 0.0 Spearman Correlation: 0.91640 with p_value: 0.0 , Concordance Index: 0.87683
+Training at Epoch 34 iteration 0 with loss 1.50439. Total time 0.47055 hours
+Training at Epoch 35 iteration 0 with loss 1.10677. Total time 0.485 hours
+Training at Epoch 36 iteration 0 with loss 2.49089. Total time 0.49972 hours
+Validation at Epoch 36 with loss:1.01319, MSE: 1.49615 , Pearson Correlation: 0.92722 with p-value: 0.0 Spearman Correlation: 0.91744 with p_value: 0.0 , Concordance Index: 0.87791
+Training at Epoch 37 iteration 0 with loss 1.33283. Total time 0.51388 hours
+Training at Epoch 38 iteration 0 with loss 1.10732. Total time 0.52805 hours
+Training at Epoch 39 iteration 0 with loss 1.14093. Total time 0.54222 hours
+Training at Epoch 40 iteration 0 with loss 1.29584. Total time 0.55666 hours
+Training at Epoch 41 iteration 0 with loss 1.90215. Total time 0.57083 hours
+Training at Epoch 42 iteration 0 with loss 1.61852. Total time 0.585 hours
+Training at Epoch 43 iteration 0 with loss 1.09131. Total time 0.59916 hours
+Validation at Epoch 43 with loss:1.19861, MSE: 1.48745 , Pearson Correlation: 0.92964 with p-value: 0.0 Spearman Correlation: 0.91839 with p_value: 0.0 , Concordance Index: 0.87845
+Training at Epoch 44 iteration 0 with loss 1.09103. Total time 0.61333 hours
+Validation at Epoch 44 with loss:2.63025, MSE: 1.45590 , Pearson Correlation: 0.93012 with p-value: 0.0 Spearman Correlation: 0.91934 with p_value: 0.0 , Concordance Index: 0.87914
+Training at Epoch 45 iteration 0 with loss 0.95324. Total time 0.6275 hours
+Training at Epoch 46 iteration 0 with loss 2.11095. Total time 0.64166 hours
+Training at Epoch 47 iteration 0 with loss 1.36388. Total time 0.65583 hours
+Training at Epoch 48 iteration 0 with loss 1.49767. Total time 0.67 hours
+Training at Epoch 49 iteration 0 with loss 1.29328. Total time 0.68444 hours
+Training at Epoch 50 iteration 0 with loss 1.39159. Total time 0.69861 hours
+Training at Epoch 51 iteration 0 with loss 1.54060. Total time 0.71277 hours
+Training at Epoch 52 iteration 0 with loss 1.68599. Total time 0.72722 hours
+Training at Epoch 53 iteration 0 with loss 0.72289. Total time 0.74138 hours
+Training at Epoch 54 iteration 0 with loss 1.36954. Total time 0.75555 hours
+Training at Epoch 55 iteration 0 with loss 1.42261. Total time 0.76972 hours
+Training at Epoch 56 iteration 0 with loss 1.18985. Total time 0.78388 hours
+Validation at Epoch 56 with loss:2.06140, MSE: 1.41649 , Pearson Correlation: 0.93237 with p-value: 0.0 Spearman Correlation: 0.92228 with p_value: 0.0 , Concordance Index: 0.88170
+Training at Epoch 57 iteration 0 with loss 1.09702. Total time 0.79805 hours
+Training at Epoch 58 iteration 0 with loss 0.79234. Total time 0.8125 hours
+Training at Epoch 59 iteration 0 with loss 1.63917. Total time 0.82638 hours
+Training at Epoch 60 iteration 0 with loss 1.05862. Total time 0.84055 hours
+Training at Epoch 61 iteration 0 with loss 1.79281. Total time 0.85472 hours
+Validation at Epoch 61 with loss:1.36399, MSE: 1.40270 , Pearson Correlation: 0.93209 with p-value: 0.0 Spearman Correlation: 0.92147 with p_value: 0.0 , Concordance Index: 0.88089
+Training at Epoch 62 iteration 0 with loss 1.11118. Total time 0.86916 hours
+Training at Epoch 63 iteration 0 with loss 1.26296. Total time 0.88361 hours
+Training at Epoch 64 iteration 0 with loss 1.39663. Total time 0.89777 hours
+Training at Epoch 65 iteration 0 with loss 1.15513. Total time 0.91194 hours
+Validation at Epoch 65 with loss:1.12363, MSE: 1.36683 , Pearson Correlation: 0.93378 with p-value: 0.0 Spearman Correlation: 0.92327 with p_value: 0.0 , Concordance Index: 0.88219
+Training at Epoch 66 iteration 0 with loss 0.86196. Total time 0.92611 hours
+Training at Epoch 67 iteration 0 with loss 1.28006. Total time 0.94055 hours
+Training at Epoch 68 iteration 0 with loss 1.33746. Total time 0.95472 hours
+Training at Epoch 69 iteration 0 with loss 1.20711. Total time 0.96888 hours
+Training at Epoch 70 iteration 0 with loss 1.06135. Total time 0.98333 hours
+Training at Epoch 71 iteration 0 with loss 0.77200. Total time 0.9975 hours
+Training at Epoch 72 iteration 0 with loss 0.82893. Total time 1.01166 hours
+Training at Epoch 73 iteration 0 with loss 1.52228. Total time 1.02583 hours
+Training at Epoch 74 iteration 0 with loss 0.81706. Total time 1.04 hours
+Training at Epoch 75 iteration 0 with loss 2.00232. Total time 1.05416 hours
+Training at Epoch 76 iteration 0 with loss 2.02524. Total time 1.06833 hours
+Training at Epoch 77 iteration 0 with loss 1.49397. Total time 1.0825 hours
+Validation at Epoch 77 with loss:1.36755, MSE: 1.35036 , Pearson Correlation: 0.93525 with p-value: 0.0 Spearman Correlation: 0.92490 with p_value: 0.0 , Concordance Index: 0.88370
+Training at Epoch 78 iteration 0 with loss 0.97136. Total time 1.09666 hours
+Training at Epoch 79 iteration 0 with loss 1.64529. Total time 1.11111 hours
+Training at Epoch 80 iteration 0 with loss 1.37537. Total time 1.12527 hours
+Training at Epoch 81 iteration 0 with loss 1.77597. Total time 1.13944 hours
+Training at Epoch 82 iteration 0 with loss 1.19815. Total time 1.15361 hours
+Training at Epoch 83 iteration 0 with loss 0.91766. Total time 1.16777 hours
+Training at Epoch 84 iteration 0 with loss 0.99441. Total time 1.18194 hours
+Training at Epoch 85 iteration 0 with loss 1.01363. Total time 1.19611 hours
+Training at Epoch 86 iteration 0 with loss 1.69560. Total time 1.21055 hours
+Training at Epoch 87 iteration 0 with loss 0.84262. Total time 1.225 hours
+Training at Epoch 88 iteration 0 with loss 1.03371. Total time 1.23916 hours
+Training at Epoch 89 iteration 0 with loss 1.13016. Total time 1.25333 hours
+Validation at Epoch 89 with loss:1.32223, MSE: 1.32775 , Pearson Correlation: 0.93591 with p-value: 0.0 Spearman Correlation: 0.92430 with p_value: 0.0 , Concordance Index: 0.88342
+Training at Epoch 90 iteration 0 with loss 1.08536. Total time 1.2675 hours
+Training at Epoch 91 iteration 0 with loss 0.86314. Total time 1.28166 hours
+Training at Epoch 92 iteration 0 with loss 0.65951. Total time 1.29583 hours
+Training at Epoch 93 iteration 0 with loss 1.42371. Total time 1.31 hours
+Training at Epoch 94 iteration 0 with loss 1.33739. Total time 1.32416 hours
+Training at Epoch 95 iteration 0 with loss 1.00383. Total time 1.33833 hours
+Training at Epoch 96 iteration 0 with loss 1.37232. Total time 1.3525 hours
+Validation at Epoch 96 with loss:1.21218, MSE: 1.32096 , Pearson Correlation: 0.93632 with p-value: 0.0 Spearman Correlation: 0.92562 with p_value: 0.0 , Concordance Index: 0.88490
+Training at Epoch 97 iteration 0 with loss 1.01946. Total time 1.36666 hours
+Training at Epoch 98 iteration 0 with loss 1.60298. Total time 1.38111 hours
+Training at Epoch 99 iteration 0 with loss 1.56810. Total time 1.39527 hours
+Training at Epoch 100 iteration 0 with loss 1.70469. Total time 1.40944 hours
+Training at Epoch 101 iteration 0 with loss 0.58736. Total time 1.42361 hours
+Training at Epoch 102 iteration 0 with loss 0.92376. Total time 1.43777 hours
+Training at Epoch 103 iteration 0 with loss 0.81254. Total time 1.45194 hours
+Training at Epoch 104 iteration 0 with loss 0.75591. Total time 1.46638 hours
+Training at Epoch 105 iteration 0 with loss 0.82864. Total time 1.48055 hours
+Training at Epoch 106 iteration 0 with loss 1.05260. Total time 1.49472 hours
+Training at Epoch 107 iteration 0 with loss 0.69278. Total time 1.50888 hours
+Training at Epoch 108 iteration 0 with loss 0.77304. Total time 1.52305 hours
+Training at Epoch 109 iteration 0 with loss 1.74208. Total time 1.53722 hours
+Training at Epoch 110 iteration 0 with loss 0.94514. Total time 1.55138 hours
+Training at Epoch 111 iteration 0 with loss 1.26646. Total time 1.56555 hours
+Training at Epoch 112 iteration 0 with loss 1.12284. Total time 1.57972 hours
+Training at Epoch 113 iteration 0 with loss 1.41299. Total time 1.59388 hours
+Training at Epoch 114 iteration 0 with loss 1.03784. Total time 1.60805 hours
+Training at Epoch 115 iteration 0 with loss 0.72179. Total time 1.6225 hours
+Training at Epoch 116 iteration 0 with loss 1.13576. Total time 1.63666 hours
+Training at Epoch 117 iteration 0 with loss 1.09059. Total time 1.65083 hours
+Training at Epoch 118 iteration 0 with loss 0.89864. Total time 1.665 hours
+Training at Epoch 119 iteration 0 with loss 1.27078. Total time 1.67916 hours
+Training at Epoch 120 iteration 0 with loss 0.90992. Total time 1.69333 hours
+Training at Epoch 121 iteration 0 with loss 0.84078. Total time 1.7075 hours
+Training at Epoch 122 iteration 0 with loss 0.83357. Total time 1.72166 hours
+Training at Epoch 123 iteration 0 with loss 0.71814. Total time 1.73583 hours
+Training at Epoch 124 iteration 0 with loss 0.93567. Total time 1.75 hours
+Validation at Epoch 124 with loss:1.34586, MSE: 1.31465 , Pearson Correlation: 0.93684 with p-value: 0.0 Spearman Correlation: 0.92639 with p_value: 0.0 , Concordance Index: 0.88604
+Training at Epoch 125 iteration 0 with loss 0.78088. Total time 1.76416 hours
+Validation at Epoch 125 with loss:0.84408, MSE: 1.29020 , Pearson Correlation: 0.93803 with p-value: 0.0 Spearman Correlation: 0.92679 with p_value: 0.0 , Concordance Index: 0.88578
+Training at Epoch 126 iteration 0 with loss 0.78930. Total time 1.77861 hours
+Training at Epoch 127 iteration 0 with loss 0.98226. Total time 1.79277 hours
+Training at Epoch 128 iteration 0 with loss 0.72244. Total time 1.80694 hours
+Training at Epoch 129 iteration 0 with loss 0.90093. Total time 1.82111 hours
+Training at Epoch 130 iteration 0 with loss 0.78782. Total time 1.83527 hours
+Training at Epoch 131 iteration 0 with loss 1.14001. Total time 1.84944 hours
+Training at Epoch 132 iteration 0 with loss 1.01802. Total time 1.86361 hours
+Training at Epoch 133 iteration 0 with loss 0.71543. Total time 1.87777 hours
+Training at Epoch 134 iteration 0 with loss 0.67632. Total time 1.89222 hours
+Training at Epoch 135 iteration 0 with loss 0.75454. Total time 1.90638 hours
+Training at Epoch 136 iteration 0 with loss 1.72653. Total time 1.92055 hours
+Training at Epoch 137 iteration 0 with loss 1.28531. Total time 1.93472 hours
+Training at Epoch 138 iteration 0 with loss 1.20633. Total time 1.94888 hours
+Training at Epoch 139 iteration 0 with loss 0.60894. Total time 1.96305 hours
+Training at Epoch 140 iteration 0 with loss 0.88231. Total time 1.9775 hours
+Training at Epoch 141 iteration 0 with loss 0.77508. Total time 1.99166 hours
+Training at Epoch 142 iteration 0 with loss 1.19073. Total time 2.00583 hours
+Validation at Epoch 142 with loss:1.03844, MSE: 1.27413 , Pearson Correlation: 0.93918 with p-value: 0.0 Spearman Correlation: 0.92870 with p_value: 0.0 , Concordance Index: 0.88725
+Training at Epoch 143 iteration 0 with loss 0.56447. Total time 2.02 hours
+Training at Epoch 144 iteration 0 with loss 0.99683. Total time 2.03416 hours
+Training at Epoch 145 iteration 0 with loss 0.74497. Total time 2.04833 hours
+Training at Epoch 146 iteration 0 with loss 0.72883. Total time 2.0625 hours
+Validation at Epoch 146 with loss:1.21636, MSE: 1.27198 , Pearson Correlation: 0.93914 with p-value: 0.0 Spearman Correlation: 0.92901 with p_value: 0.0 , Concordance Index: 0.88782
+Training at Epoch 147 iteration 0 with loss 0.92126. Total time 2.07666 hours
+Training at Epoch 148 iteration 0 with loss 1.00856. Total time 2.09083 hours
+Training at Epoch 149 iteration 0 with loss 0.60412. Total time 2.10527 hours
+Training at Epoch 150 iteration 0 with loss 0.79521. Total time 2.11944 hours
+Training at Epoch 151 iteration 0 with loss 0.87026. Total time 2.13361 hours
+Training at Epoch 152 iteration 0 with loss 0.73707. Total time 2.14777 hours
+Training at Epoch 153 iteration 0 with loss 0.87079. Total time 2.16194 hours
+Training at Epoch 154 iteration 0 with loss 0.68312. Total time 2.17611 hours
+Training at Epoch 155 iteration 0 with loss 0.61473. Total time 2.19027 hours
+Training at Epoch 156 iteration 0 with loss 1.24525. Total time 2.20472 hours
+Training at Epoch 157 iteration 0 with loss 0.77480. Total time 2.21888 hours
+Training at Epoch 158 iteration 0 with loss 0.76041. Total time 2.23305 hours
+Training at Epoch 159 iteration 0 with loss 0.47533. Total time 2.24722 hours
+Training at Epoch 160 iteration 0 with loss 0.69891. Total time 2.26138 hours
+Training at Epoch 161 iteration 0 with loss 0.68919. Total time 2.27583 hours
+Training at Epoch 162 iteration 0 with loss 0.92641. Total time 2.29 hours
+Training at Epoch 163 iteration 0 with loss 0.53721. Total time 2.30416 hours
+Training at Epoch 164 iteration 0 with loss 0.83106. Total time 2.31833 hours
+Training at Epoch 165 iteration 0 with loss 0.83811. Total time 2.33277 hours
+Training at Epoch 166 iteration 0 with loss 0.88181. Total time 2.34694 hours
+Training at Epoch 167 iteration 0 with loss 0.56924. Total time 2.36111 hours
+Training at Epoch 168 iteration 0 with loss 0.84353. Total time 2.37527 hours
+Training at Epoch 169 iteration 0 with loss 0.93518. Total time 2.38972 hours
+Training at Epoch 170 iteration 0 with loss 0.80358. Total time 2.40388 hours
+Training at Epoch 171 iteration 0 with loss 1.29604. Total time 2.41805 hours
+Training at Epoch 172 iteration 0 with loss 0.83623. Total time 2.43222 hours
+Training at Epoch 173 iteration 0 with loss 0.37856. Total time 2.44638 hours
+Training at Epoch 174 iteration 0 with loss 0.67343. Total time 2.46055 hours
+Training at Epoch 175 iteration 0 with loss 0.64138. Total time 2.475 hours
+Training at Epoch 176 iteration 0 with loss 1.53249. Total time 2.48916 hours
+Training at Epoch 177 iteration 0 with loss 0.57063. Total time 2.50333 hours
+Training at Epoch 178 iteration 0 with loss 0.61754. Total time 2.5175 hours
+Training at Epoch 179 iteration 0 with loss 0.89264. Total time 2.53166 hours
+Validation at Epoch 179 with loss:2.36546, MSE: 1.25668 , Pearson Correlation: 0.94005 with p-value: 0.0 Spearman Correlation: 0.92855 with p_value: 0.0 , Concordance Index: 0.88771
+Training at Epoch 180 iteration 0 with loss 0.56589. Total time 2.54611 hours
+Training at Epoch 181 iteration 0 with loss 0.86304. Total time 2.56111 hours
+Training at Epoch 182 iteration 0 with loss 0.91313. Total time 2.57527 hours
+Training at Epoch 183 iteration 0 with loss 0.91761. Total time 2.58972 hours
+Training at Epoch 184 iteration 0 with loss 0.76168. Total time 2.60388 hours
+Training at Epoch 185 iteration 0 with loss 0.92466. Total time 2.61805 hours
+Training at Epoch 186 iteration 0 with loss 0.80263. Total time 2.63222 hours
+Training at Epoch 187 iteration 0 with loss 0.60732. Total time 2.64638 hours
+Training at Epoch 188 iteration 0 with loss 0.68608. Total time 2.66055 hours
+Validation at Epoch 188 with loss:0.91864, MSE: 1.25513 , Pearson Correlation: 0.94013 with p-value: 0.0 Spearman Correlation: 0.92946 with p_value: 0.0 , Concordance Index: 0.88865
+Training at Epoch 189 iteration 0 with loss 0.82218. Total time 2.67472 hours
+Training at Epoch 190 iteration 0 with loss 0.58923. Total time 2.68916 hours
+Training at Epoch 191 iteration 0 with loss 0.71416. Total time 2.70333 hours
+Training at Epoch 192 iteration 0 with loss 1.30298. Total time 2.7175 hours
+Training at Epoch 193 iteration 0 with loss 0.60343. Total time 2.73166 hours
+Training at Epoch 194 iteration 0 with loss 0.56502. Total time 2.74611 hours
+Validation at Epoch 194 with loss:1.39584, MSE: 1.23580 , Pearson Correlation: 0.94029 with p-value: 0.0 Spearman Correlation: 0.92925 with p_value: 0.0 , Concordance Index: 0.88892
+Training at Epoch 195 iteration 0 with loss 0.51683. Total time 2.76027 hours
+Training at Epoch 196 iteration 0 with loss 0.57869. Total time 2.77444 hours
+Training at Epoch 197 iteration 0 with loss 0.86638. Total time 2.78861 hours
+Training at Epoch 198 iteration 0 with loss 0.61965. Total time 2.80277 hours
+Training at Epoch 199 iteration 0 with loss 0.64972. Total time 2.81694 hours
+Validation at Epoch 199 with loss:0.86439, MSE: 1.22797 , Pearson Correlation: 0.94138 with p-value: 0.0 Spearman Correlation: 0.93113 with p_value: 0.0 , Concordance Index: 0.88964
+Training at Epoch 200 iteration 0 with loss 0.72838. Total time 2.83138 hours
+--- Training Finished ---
