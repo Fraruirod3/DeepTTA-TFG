@@ -27,12 +27,12 @@ Debido al tamaño de los archivos, estos archivos deben descargarse por separado
 1. Archivo con las características génicas de las líneas celulares: https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources///Data/preprocessed/Cell_line_RMA_proc_basalExp.txt.zip
 2. Modelos entrenados: [https://drive.google.com/drive/u/2/folders/1JWLLyCYW1wWNZBEsflt4l8aSdRoga72K](https://drive.google.com/file/d/1J5kJnznJ6JOSaDzutiu4XJI9GDGsbaco/view?usp=drive_link) cuyas informaciones están en la carpeta Registro_Modelos
 
-
-
-   
-Este proyecto es una adaptación académica del modelo original DeepTTA (https://academic.oup.com/bib/article/23/3/bbac100/6554594).
-La implementación se ha reestructurado para facilitar la comprensión, experimentación y evaluación del modelo en un entorno reproducible.
-
+Este proyecto es un estudio académico del modelo original DeepTTA [1] y se presenta como parte del Trabajo Fin de Grado (TFG) para la obtención del título en la carrera de Ingeniería de la Salud, mención Informática Clínica, por la Universidad de Sevilla. El código se ha reestructurado para facilitar la comprensión, experimentación y evaluación del modelo en un entorno reproducible, así como adaptado para una serie de experimentos que se presentan en la memoria del TFG presentado.
+ 
+This project is an academic study of the original DeepTTA model [1]. It is presented as part of the bachelor thesis (TFG) in the degree of Ingeniería de la Salud - Informática Clínica in the  University of Seville. The code has been restructured to facilitate the understanding, experimentation and evaluation of the model in a 
+reproducible environment, as well as adapted for a series of experiments that are presented in the memory of the bachelor thesis.
+ 
+[1] Likun Jiang, Changzhi Jiang, Xinyu Yu, Rao Fu, Shuting Jin, Xiangrong Liu, DeepTTA: a transformer-based model for predicting cancer drug response, Briefings in Bioinformatics, Volume 23, Issue 3, May 2022, bbac100, https://doi.org/10.1093/bib/bbac100. Enlace: https://academic.oup.com/bib/article/23/3/bbac100/6554594 
 
 
 Francisco Javier Ruiz Rodríguez
